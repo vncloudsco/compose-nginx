@@ -21,7 +21,7 @@ nginx-gen:
 nginx-letsencrypt:
   image: jrcs/letsencrypt-nginx-proxy-companion
   container_name: nginx-letsencrypt
-  depends_on: [nginx-gen]
+  links: [nginx-gen]
   volumes_from: [nginx]
   volumes:
     - ./nginx/certs:/etc/nginx/certs
