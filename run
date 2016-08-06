@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-./first_run_check_directories
-./first_run_fetch_default_template
-docker-compose up -d
