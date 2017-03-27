@@ -1,5 +1,5 @@
 nginx:
-  image: nginx
+  image: nginx:stable-alpine
   container_name: nginx
   volumes:
     - ./nginx/conf.d:/etc/nginx/conf.d
