@@ -8,8 +8,7 @@ nginx:
     - ./nginx/certs:/etc/nginx/certs:ro
     - ./nginx/proxy.conf:/etc/nginx/proxy.conf:ro
   ports:
-    - "80:80"
-    - "443:443"
+    - "8080:80"
 nginx-gen:
   image: jwilder/docker-gen
   container_name: nginx-gen
